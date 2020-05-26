@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron" style="margin:auto; height:auto; margin-top:2vh;">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-5">Add Photo to Gallery</h1>
+        </div>
+        <div class="col">
+          <a href="gallery.php" class="btn btn-primary btn-lg active float-right" role="button" aria-pressed="true">Gallery</a>
+        </div>
+      </div>
+      <hr class="my-4">
+      <form name="RegForm" action="gallery.php" method="post" style="width:fit-content" onsubmit="return Validation()"
+        enctype="multipart/form-data">
+        <div class="form-group row">
+          <label for="photoName" class="col-sm-2 col-form-label">Photo name:</label>
+          <div class="col-sm-5">
+            <input name="photoName" type="text" class="form-control" id="inputPassword" pattern="[a-zA-Z0-9]+"
+              title="Photo name should only letter and number" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Date" class="col-sm-2 col-form-label">Date taken:</label>
+          <div class="col-sm-5">
+            <input name="dateTaken" type="date" class="form-control" id="inputPassword" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Name" class="col-sm-2 col-form-label">Photographer: </label>
+          <div class="col-sm-5">
+            <input name="name" type="text" class="form-control" id="inputPassword" pattern="[a-zA-Z0-9]+"
+              title="Photographer name should only letter and number" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="Location" class="col-sm-2 col-form-label">Location:</label>
+          <div class="col-sm-5">
+            <input name="location" type="location" class="form-control" id="inputPassword" pattern="[a-zA-Z0-9]+"
+              title="Location should only letter and number" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="uploadFile" class="col-sm-2 col-form-label">Choose file upload:</label>
+          <div class="col-sm-5">
+            <input name="uploadFile" type="file" class="form-control-file" accept="image/*" id="exampleFormControlFile1"
+            required>
+          </div>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary mb-2 btn-lg float-right">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
