@@ -20,7 +20,7 @@ We want to provide user the experiences to upload and create their own gallery.
 ```
     Input Validating (index.html)
     Error Handling (gallery.php)
-	Pull out and display data from db .
+    Pull out and display data from db
     Saving data in to db 
-	Sorting data while retrieving data from db
+    Sorting data while retrieving data from db
 ```
