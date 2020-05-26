@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <?php
-// session_start();
-// if( isset( $_SESSION['completed']) ) header("Location: index.html");
 //First, we will check for the correct action
 //If it is submit from html, we will start saving data to database
 if (isset($_POST['submit'])) {
